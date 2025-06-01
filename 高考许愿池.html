@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>高考心愿池</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="countdown">
+            <h2>距离2024年高考还有</h2>
+            <div id="countdown-timer"></div>
+        </div>
+        
+        <h1>高考祝福平台</h1>
+        
+        <button id="wishButton">
+            <i class="fas fa-gift"></i> 高考心愿池
+        </button>
+        
+        <div id="wishDisplay" class="wish-display">
+            <p>点击上方按钮获取高考祝福</p>
+        </div>
+        
+        <div class="share-section">
+            <button id="shareBtn" class="share-btn">
+                <img src="share-icon.png" alt="分享"> 分享祝福
+            </button>
+        </div>
+        
+        <div class="custom-wish">
+            <h3>添加你的祝福</h3>
+            <textarea id="customWishInput" placeholder="输入你的高考祝福语..."></textarea>
+            <button id="addWishBtn">添加祝福语</button>
+        </div>
+        
+        <div class="footer">
+            <p>为高考学子送上最真挚的祝福 © 2024</p>
+        </div>
+    </div>
+    
+    <!-- 烟花画布 -->
+    <canvas id="fireworksCanvas"></canvas>
+    
+    <!-- 音效 -->
+    <audio id="clickSound">
+        <source src="https://assets.mixkit.co/sfx/preview/mixkit-positive-interface-beep-221.mp3" type="audio/mpeg">
+        您的浏览器不支持音频元素。
+    </audio>
+    
+    <script src="script.js"></script>
+</body>
+</html>
